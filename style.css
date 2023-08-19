@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --color-base-white: rgb(255, 255, 255);
+    --color-black: rgb(50, 50, 56);
+    --color-light-gray: rgb(225, 225, 230);
+    --color-forest-hover: rgb(3, 85, 43);
+    --color-rain-hover: rgb(2, 121, 157);
+    --color-coffee-hover: rgb(255, 179, 179);
+    --color-fire-hover: rgb(226, 88, 34);
+}
+
+body {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.sr-only {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+    margin: -1px;
+    padding: 0px;
+    border: 0;
+    appearance: none;
+}
+
+#timer-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+#timer {
+    display: flex;
+    font-size: 12.6rem;
+    font-weight: 700;
+}
+
+
+#controls {
+    display: flex;
+    gap: 4.0rem;
+}
+
+#controls button {
+    background-color: var(--color-base-white);
+    font-size: 4.8rem;
+    border: 0;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#controls button:hover {
+    transform: translateY(.2rem);
+}
+
+#sound-wrapper {
+    margin-top: 6.4rem;
+    display: grid;
+    grid-template-areas: ".forest" ".rain"
+                        ".coffee" ".fire";
+    gap: 3.2rem;
+}
+
+#sound-wrapper button {
+    font-size: 6.2rem;
+    padding: 5.6rem 4.8rem;
+    border: 0;
+    border-radius: 2.4rem;
+    cursor: pointer;
+}
+
+.forest:hover {
+    background-color: var(--color-forest-hover);
+    color: var(--color-base-white);
+}
+
+.rain:hover {
+    background-color: var(--color-rain-hover);
+    color: var(--color-base-white);
+}
+
+.coffee:hover {
+    background-color: var(--color-coffee-hover);
+    color: var(--color-base-white);
+}
+
+.fire:hover {
+    background-color: var(--color-fire-hover);
+    color: var(--color-base-white);
+}
+
+.running .ph-play-circle,
+html:not(.running) .ph-pause-circle {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    main {
+        flex-direction: row;
+        gap: 18.0rem;
+    }
+}

@@ -1,0 +1,1 @@
+FocusTimer.start(0, 6)

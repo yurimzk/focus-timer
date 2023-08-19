@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus Timer 2.0</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="./src/main.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section id="timer-wrapper">
+        <div id="timer">
+          <span id="minutes">00</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        </div>
+        <div id="controls">
+          <button data-action="toggleRunning" class="ph ph-play-circle">
+            <span class="sr-only">Start timer</span>
+          </button>
+          <button data-action="toggleRunning" class="ph ph-pause-circle">
+            <span class="sr-only">Pause timer</span>
+          </button>
+          <button data-action="reset" class="ph ph-stop-circle">
+            <span class="sr-only">Reset timer</span>
+          </button>
+          <button
+            id="addButton"
+            data-action="addTime"
+            class="ph ph-plus-circle"
+          >
+            <span class="sr-only">Add time on timer</span>
+          </button>
+          <button
+            id="subtractButton"
+            data-action="subtractTime"
+            class="ph ph-minus-circle"
+          >
+            <span class="sr-only">Remove time on timer</span>
+          </button>
+        </div>
+      </section>
+      <section id="sound-wrapper">
+        <button
+          data-action="toggleMusic"
+          data-sound="forest"
+          class="ph ph-tree forest"
+        >
+          <span class="sr-only">Forest sound</span>
+        </button>
+        <button
+          data-action="toggleMusic"
+          data-sound="rain"
+          class="ph ph-cloud-rain rain"
+        >
+          <span class="sr-only">Raining sound</span>
+        </button>
+        <button
+          data-action="toggleMusic"
+          data-sound="coffee"
+          class="ph ph-storefront coffee"
+        >
+          <span class="sr-only">Cofee shop sound</span>
+        </button>
+        <button
+          data-action="toggleMusic"
+          data-sound="fire"
+          class="ph ph-flame fire"
+        >
+          <span class="sr-only">Fireplace sound</span>
+        </button>
+      </section>
+    </main>
+  </body>
+</html>
