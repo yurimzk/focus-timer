@@ -1,6 +1,6 @@
 import * as FocusTimer from './FocusTimer/index.js'
 
-FocusTimer.start(0, 6)
+FocusTimer.start(25, 0)
 
 // TIMER
 // Seconds must decrease until 0 (can't be negative)
