@@ -24,8 +24,6 @@ export function addTime() {
     if (currentMinutes < 60) {
         let newMinutes = currentMinutes + 5;
 
-        newMinutes = Math.min(newMinutes, 60);
-
         state.minutes = newMinutes;
         timer.updateDisplay(newMinutes, state.seconds);
     }
