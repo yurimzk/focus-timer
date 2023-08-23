@@ -92,7 +92,17 @@ main {
     color: var(--color-base-white);
 }
 
+.active-forest {
+    background-color: var(--color-forest-hover);
+    color: var(--color-base-white);
+}
+
 .rain:hover {
+    background-color: var(--color-rain-hover);
+    color: var(--color-base-white);
+}
+
+.active-rain {
     background-color: var(--color-rain-hover);
     color: var(--color-base-white);
 }
@@ -102,7 +112,17 @@ main {
     color: var(--color-base-white);
 }
 
+.active-coffee {
+    background-color: var(--color-coffee-hover);
+    color: var(--color-base-white);
+}
+
 .fire:hover {
+    background-color: var(--color-fire-hover);
+    color: var(--color-base-white);
+}
+
+.active-fire {
     background-color: var(--color-fire-hover);
     color: var(--color-base-white);
 }

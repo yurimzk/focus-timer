@@ -29,8 +29,6 @@ export function addTime() {
     }
 }
 
-
-
 export function subtractTime() {
     if (state.isRunning) {
         return
@@ -44,5 +42,5 @@ export function subtractTime() {
         state.minutes = newMinutes;
         timer.updateDisplay(newMinutes, state.seconds);
         
-         }
     }
+}
