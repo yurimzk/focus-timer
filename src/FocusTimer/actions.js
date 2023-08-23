@@ -25,6 +25,8 @@ export function addTime() {
     if (currentMinutes < 60) {
         let newMinutes = currentMinutes + 5;
 
+        newMinutes = Math.min(newMinutes, 60);
+
         state.minutes = newMinutes;
         timer.updateDisplay(newMinutes, state.seconds);
     }
@@ -37,14 +39,16 @@ export function subtractTime() {
 
     let currentMinutes = Number(el.minutes.textContent);
 
-    if (currentMinutes > 0) {
+    if (currentMinutes >= 5) {
         let newMinutes = currentMinutes - 5;
-        
+
+        newMinutes = Math.max(newMinutes, 0);
+
         state.minutes = newMinutes;
         timer.updateDisplay(newMinutes, state.seconds);
-        
     }
 }
+
 
 export function toggleMusic() {
     state.isMute = document.documentElement.classList.toggle('music-on')
