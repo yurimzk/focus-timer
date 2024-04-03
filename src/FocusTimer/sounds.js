@@ -1,9 +1,9 @@
-export const forestSound = new Audio('./assets/forest.wav')
-export const rainSound = new Audio('./assets/rain.wav')
-export const coffeShopSound = new Audio('./assets/coffee-shop.wav')
-export const fireSound = new Audio('./assets/fire.wav')
+export const forest = new Audio('./assets/forest.wav')
+export const rain = new Audio('./assets/rain.wav')
+export const coffeShop = new Audio('./assets/coffee-shop.wav')
+export const fire = new Audio('./assets/fire.wav')
 
-forestSound.loop = true
-rainSound.loop = true
-coffeShopSound.loop = true
-fireSound.loop = true
+forest.loop = true
+rain.loop = true
+coffeShop.loop = true
+fire.loop = true
