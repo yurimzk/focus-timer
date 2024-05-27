@@ -21,7 +21,7 @@ export function addTime() {
     }
 
     let currentMinutes = Number(el.minutes.textContent);
-    
+
     if (currentMinutes < 60) {
         let newMinutes = currentMinutes + 5;
 
@@ -49,8 +49,6 @@ export function subtractTime() {
     }
 }
 
-
-export function toggleMusic() {
-    state.isMute = document.documentElement.classList.toggle('music-on')
-
+export function toggleForest() {
+  el.forest.classList.toggle('toggle-forest');
 }

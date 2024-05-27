@@ -92,7 +92,7 @@ main {
     color: var(--color-base-white);
 }
 
-.active-forest {
+.toggle-forest {
     background-color: var(--color-forest-hover);
     color: var(--color-base-white);
 }

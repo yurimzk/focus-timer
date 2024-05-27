@@ -1,4 +1,4 @@
-import { controls } from "./elements.js"
+import { controls, forest } from "./elements.js"
 import * as actions from "./actions.js"
 
 export function registerControls() {
@@ -9,4 +9,10 @@ export function registerControls() {
         }
         actions[action]();
     })
+}
+
+export function registerForestEvent() {
+  forest.addEventListener('click', (event) => {
+    actions.toggleForest();
+  });
 }
