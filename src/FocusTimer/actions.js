@@ -51,16 +51,28 @@ export function subtractTime() {
 
 export function toggleForest() {
   el.forest.classList.toggle('toggle-forest');
+  el.rain.classList.remove('toggle-rain');
+  el.coffee.classList.remove('toggle-coffee');
+  el.fire.classList.remove('toggle-fire');
 }
 
 export function toggleRain() {
   el.rain.classList.toggle('toggle-rain');
+  el.forest.classList.remove('toggle-forest');
+  el.coffee.classList.remove('toggle-coffee');
+  el.fire.classList.remove('toggle-fire');
 }
 
 export function toggleCoffee() {
   el.coffee.classList.toggle('toggle-coffee');
+  el.forest.classList.remove('toggle-forest');
+  el.rain.classList.remove('toggle-rain');
+  el.fire.classList.remove('toggle-fire');
 }
 
 export function toggleFire() {
   el.fire.classList.toggle('toggle-fire');
+  el.forest.classList.remove('toggle-forest');
+  el.rain.classList.remove('toggle-rain');
+  el.coffee.classList.remove('toggle-coffee');
 }
