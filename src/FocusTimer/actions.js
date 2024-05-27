@@ -18,6 +18,8 @@ export function reset() {
     el.rain.classList.remove('toggle-rain');
     el.coffee.classList.remove('toggle-coffee');
     el.fire.classList.remove('toggle-fire');
+
+    sounds.resetSound();
 }
 
 export function addTime() {
@@ -56,6 +58,7 @@ export function subtractTime() {
 
 export function toggleForest() {
   el.forest.classList.toggle('toggle-forest');
+  sounds.playForestSound();
   el.rain.classList.remove('toggle-rain');
   el.coffee.classList.remove('toggle-coffee');
   el.fire.classList.remove('toggle-fire');
@@ -63,6 +66,7 @@ export function toggleForest() {
 
 export function toggleRain() {
   el.rain.classList.toggle('toggle-rain');
+  sounds.playRainSound();
   el.forest.classList.remove('toggle-forest');
   el.coffee.classList.remove('toggle-coffee');
   el.fire.classList.remove('toggle-fire');
@@ -70,6 +74,7 @@ export function toggleRain() {
 
 export function toggleCoffee() {
   el.coffee.classList.toggle('toggle-coffee');
+  sounds.playCoffeeSound();
   el.forest.classList.remove('toggle-forest');
   el.rain.classList.remove('toggle-rain');
   el.fire.classList.remove('toggle-fire');
@@ -77,6 +82,7 @@ export function toggleCoffee() {
 
 export function toggleFire() {
   el.fire.classList.toggle('toggle-fire');
+  sounds.playFireSound();
   el.forest.classList.remove('toggle-forest');
   el.rain.classList.remove('toggle-rain');
   el.coffee.classList.remove('toggle-coffee');
