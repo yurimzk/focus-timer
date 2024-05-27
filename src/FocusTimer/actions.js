@@ -13,6 +13,11 @@ export function reset() {
     state.isRunning = false
     document.documentElement.classList.remove('running')
     timer.updateDisplay()
+
+    el.forest.classList.remove('toggle-forest');
+    el.rain.classList.remove('toggle-rain');
+    el.coffee.classList.remove('toggle-coffee');
+    el.fire.classList.remove('toggle-fire');
 }
 
 export function addTime() {
