@@ -52,3 +52,15 @@ export function subtractTime() {
 export function toggleForest() {
   el.forest.classList.toggle('toggle-forest');
 }
+
+export function toggleRain() {
+  el.rain.classList.toggle('toggle-rain');
+}
+
+export function toggleCoffee() {
+  el.coffee.classList.toggle('toggle-coffee');
+}
+
+export function toggleFire() {
+  el.fire.classList.toggle('toggle-fire');
+}

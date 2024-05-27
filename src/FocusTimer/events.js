@@ -1,4 +1,4 @@
-import { controls, forest } from "./elements.js"
+import { coffee, controls, fire, forest, rain } from "./elements.js"
 import * as actions from "./actions.js"
 
 export function registerControls() {
@@ -14,5 +14,23 @@ export function registerControls() {
 export function registerForestEvent() {
   forest.addEventListener('click', (event) => {
     actions.toggleForest();
+  });
+}
+
+export function registerRainEvents() {
+  rain.addEventListener('click', (event) => {
+    actions.toggleRain();
+  });
+}
+
+export function registerCoffeeEvents() {
+  coffee.addEventListener('click', (event) => {
+    actions.toggleCoffee();
+  });
+}
+
+export function registerFireEvents() {
+  fire.addEventListener('click', (event) => {
+    actions.toggleFire();
   });
 }

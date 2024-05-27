@@ -102,7 +102,7 @@ main {
     color: var(--color-base-white);
 }
 
-.active-rain {
+.toggle-rain {
     background-color: var(--color-rain-hover);
     color: var(--color-base-white);
 }
@@ -112,7 +112,7 @@ main {
     color: var(--color-base-white);
 }
 
-.active-coffee {
+.toggle-coffee {
     background-color: var(--color-coffee-hover);
     color: var(--color-base-white);
 }
@@ -122,7 +122,7 @@ main {
     color: var(--color-base-white);
 }
 
-.active-fire {
+.toggle-fire {
     background-color: var(--color-fire-hover);
     color: var(--color-base-white);
 }

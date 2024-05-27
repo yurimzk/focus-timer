@@ -10,4 +10,7 @@ export function start(minutes, seconds) {
 
     events.registerControls();
     events.registerForestEvent();
+    events.registerRainEvents();
+    events.registerCoffeeEvents();
+    events.registerFireEvents();
 }
